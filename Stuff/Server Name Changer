@@ -1,0 +1,11 @@
+local 2ndpart = {"New", "Fun"}
+local 1stpart = GetHostName()
+
+local Timer = 5
+
+local function servernamechanger()
+	local secondthing = table.Random(2ndpart)
+	RunConsoleCommand("hostname", 1stpart.." | "..secondthing)
+	timer.Simple(Timer, servernamechanger)
+end
+servernamechanger()
