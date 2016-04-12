@@ -6,10 +6,10 @@ Local underthemap = {
 
 local box = ents.FindInBox(underthemap.min,underthemap.max)
 
-Function mapchecker()
+function mapchecker()
      for k,v in pairs(box) do
           if v:GetClass() == "Nukething" then
-               Local pos = v:GetPos()
+               local pos = v:GetPos()
                v:SetPos(pos + Vector(0,0,45)
           end
      end
