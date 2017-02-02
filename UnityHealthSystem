@@ -9,7 +9,7 @@ public class HealthScript: MonoBehaviour
 	public int SpawnY;
 	public int SpawnZ;
 	public GUIStyle progress_empty;
-    public GUIStyle progress_full;
+    	public GUIStyle progress_full;
       
      //current progress
     public float barDisplay;
