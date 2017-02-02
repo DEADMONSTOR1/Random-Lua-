@@ -1,0 +1,65 @@
+using UnityEngine;
+using UnityEngine.Networking;
+using System.Collections;
+using Mono.Data.Sqlite; 
+using System.Data; 
+using System;
+
+public class NameSystem : NetworkBehaviour
+{
+	void Start()
+	{
+		DatabaseCreation()
+	}
+	
+	void CreateTable() {
+		 string conn = "URI=file:" + Application.dataPath + "/PickAndPlaceDatabase.s3db"; //Path to database.
+		 IDbConnection dbconn;
+		 dbconn = (IDbConnection) new SqliteConnection(conn);
+		 dbconn.Open(); //Open connection to the database.
+		 IDbCommand dbcmd = dbconn.CreateCommand()
+
+		 string sqlQuery = "CREATE TABLE User
+			(
+				UserID int,
+				Name string,
+				inventory string,
+				Coins int,
+				Admin bool
+			); ";
+		 dbcmd.CommandText = sqlQuery;
+		 dbcmd.Dispose();
+		 dbcmd = null;
+		 dbconn.Close();
+		 dbconn = nulll
+	 }
+	
+	void DatabaseCreation(){
+		 string conn = "URI=file:" + Application.dataPath + "/PickAndPlaceDatabase.s3db"; //Path to database.
+		 IDbConnection dbconn;
+		 dbconn = (IDbConnection) new SqliteConnection(conn);
+		 dbconn.Open(); //Open connection to the database.
+		 IDbCommand dbcmd = dbconn.CreateCommand()
+
+		 string sqlQuery = "SELECT COLUMN_NAME FROM INFORMATION_SCHEMA.COLUMNS WHERE TABLE_NAME = ?";
+		 dbcmd.CommandText = sqlQuery;
+		 IDataReader reader = dbcmd.ExecuteReader();
+		 while (reader.Read())
+		 {
+			 string name = reader.GetString(0);
+			 if(name == null) {
+				 CreateTable();
+			 }
+
+		 }
+
+		 reader.Close();
+		 reader = null;
+		 dbcmd.Dispose();
+		 dbcmd = null;
+		 dbconn.Close();
+		 dbconn = nulll
+
+	 }
+	}
+}
