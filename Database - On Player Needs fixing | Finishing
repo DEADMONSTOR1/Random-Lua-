@@ -1,0 +1,40 @@
+using UnityEngine;
+using UnityEngine.Networking;
+using System.Collections;
+using Mono.Data.Sqlite; 
+using System.Data; 
+using System;
+
+public class NameSystem : NetworkBehaviour
+{
+	void Start()
+	{
+    LoadNameOrCreateName()
+	}
+	
+  void SetName(string name)
+  {
+    if (this.name == null){
+      this.name = name
+      QuerySQL("UPDATE
+    }
+  }
+  
+  void LoginToServer{
+    QuerySQL("")
+  }
+  
+	void QuerySQL(string sql){
+		 string conn = "URI=file:" + Application.dataPath + "/PickAndPlaceDatabase.s3db"; //Path to database.
+		 IDbConnection dbconn;
+		 dbconn = (IDbConnection) new SqliteConnection(conn);
+		 dbconn.Open(); //Open connection to the database.
+		 IDbCommand dbcmd = dbconn.CreateCommand()
+		 string sqlQuery = sql;
+		 dbcmd.CommandText = sqlQuery;
+		 dbcmd.Dispose();
+		 dbcmd = null;
+		 dbconn.Close();
+		 dbconn = nulll
+	 }
+}
