@@ -8,8 +8,7 @@ public class HealthScript: MonoBehaviour
 	public int SpawnX;
 	public int SpawnY;
 	public int SpawnZ;
-	public GUIStyle progress_empty;
-    	public GUIStyle progress_full;
+
 
 	//current progress
 	public float barDisplay;
@@ -46,15 +45,15 @@ public class HealthScript: MonoBehaviour
 	
 	void OnGUI()
      {
-		 //draw the background:
-		 GUI.BeginGroup(new Rect(pos.x, pos.y, size.x, size.y), emptyTex, progress_empty);
+		 //draw the background
+		 GUI.BeginGroup(new Rect(pos.x, pos.y, size.x, size.y), emptyTex);
 
-		 GUI.Box(new Rect(pos.x, pos.y, size.x, size.y), fullTex, progress_full);
+		 GUI.Box(new Rect(pos.x, pos.y, size.x, size.y), fullTex);
 
 		 //draw the filled-in part:
 		 GUI.BeginGroup(new Rect(0, 0, size.x * barDisplay, size.y));
 
-		 GUI.Box(new Rect(0, 0, size.x, size.y), fullTex, progress_full);
+		 GUI.Box(new Rect(0, 0, size.x, size.y), fullTex);
 
 		 GUI.EndGroup();
 		 GUI.EndGroup();
