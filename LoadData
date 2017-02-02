@@ -1,0 +1,17 @@
+using UnityEngine;
+using System.Collections;
+
+public class LoadDatafromDatabase: MonoBehaviour
+{	
+	public string StartingInventory;
+	public int StartingCurrency;
+	
+	private bool CanLoad;
+	
+	void Start(){
+		if (StartingInventory == null || StartingCurrency == null) {
+			Debug.Log("Loading data Failed. Starting Inventory or Currency Failed");
+			CanLoad = false;
+		}
+	}
+}
