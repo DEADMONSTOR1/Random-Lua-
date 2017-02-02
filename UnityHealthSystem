@@ -8,8 +8,10 @@ public class HealthScript: MonoBehaviour
 	public int SpawnX;
 	public int SpawnY;
 	public int SpawnZ;
-
-
+	
+	public Vector3 pos;
+	public Vector3 size;
+	
 	//current progress
 	public float barDisplay;
 
@@ -61,8 +63,10 @@ public class HealthScript: MonoBehaviour
       
      void Update()
      {
-      
     	 barDisplay = this.health/StartingHealth;
+	 if (barDisplay == null){
+		barDisplay = 0;
+	}
      }
       
 }
