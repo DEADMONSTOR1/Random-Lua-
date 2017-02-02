@@ -10,15 +10,15 @@ public class HealthScript: MonoBehaviour
 	public int SpawnZ;
 	public GUIStyle progress_empty;
     	public GUIStyle progress_full;
-      
-     //current progress
-    public float barDisplay;
-      
-    Vector2 pos = new Vector2(10,50);
-    Vector2 size = new Vector2(250,50);
-      
-    public Texture2D emptyTex;
-    public Texture2D fullTex;
+
+	//current progress
+	public float barDisplay;
+
+	Vector2 pos = new Vector2(10,50);
+	Vector2 size = new Vector2(250,50);
+
+	public Texture2D emptyTex;
+	public Texture2D fullTex;
 
 	void Start(){
 		this.health = StartingHealth;
