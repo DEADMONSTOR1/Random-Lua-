@@ -1,0 +1,34 @@
+using UnityEngine;
+using System.Collections;
+
+public class HealthScript: MonoBehaviour
+{
+	public int StartingHealth;
+	public int SpawnX;
+	public int SpawnY;
+	public int SpawnZ;
+
+	void Start(){
+		this.health = StartingHealth;
+	}
+	
+	void TakeDamage(int damage)
+	{
+		this.health = (this.health - TakeDamage)
+		if (this.health < 1) {
+			Death(this)
+		}
+	}
+
+	void Death(GameObject object){
+		// Play death Animation
+		
+		object.transform.position = new Vector3(SpawnX, SpawnY, Spawn);
+
+		// Remove some currency
+
+		// GUI to tell them they have died
+
+
+	}
+}
